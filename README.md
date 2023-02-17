@@ -1,6 +1,12 @@
 # hidgen
 CLI tool for automatic heading tag ID generation.
 
+## Install
+
+```sh
+go install github.com/shinshin86/hidgen@latest
+```
+
 ## Usage
 By default, only h2 and h3 are given the id
 
