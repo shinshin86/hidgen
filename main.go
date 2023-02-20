@@ -69,7 +69,10 @@ func main() {
 		log.Fatal(err)
 	}
 
-	data := []byte(html)
+	// "<img src=''/>" -> "<img src='' />"
+	replacedHtml := strings.Replace(html, "/>", " />", -1)
+
+	data := []byte(replacedHtml)
 
 	f2, err := os.Create(outputPath)
 	if err != nil {
