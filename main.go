@@ -58,7 +58,7 @@ func main() {
 
 	doc.Find(replaceHeading).Each(func(i int, s *goquery.Selection) {
 		anchor, _ := goquery.NewDocumentFromReader(strings.NewReader("<a></a>"))
-		anchor.Find("a").SetAttr("id", strings.ToLower(s.Text()))
+		anchor.Find("a").SetAttr("id", s.Text())
 		html, _ := anchor.Html()
 		s.BeforeHtml(html + "\n")
 	})
