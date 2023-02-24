@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      GOPATH: ${{ runner.workspace }}/go
+      GOPATH: ${{ github.workspace }}/go
 
     strategy:
       matrix:
