@@ -1,4 +1,6 @@
 # hidgen
+[![Test](https://github.com/shinshin86/hidgen/actions/workflows/test.yml/badge.svg)](https://github.com/shinshin86/hidgen/actions/workflows/test.yml)
+
 CLI tool for automatic heading tag ID generation.
 
 ## Install
